@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #c4d9ff;
+            /* background-color: grey; */
+            color: white;
+            font-family:Arial;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #c5baff;
+        }
+
+        nav ul {
+            display: flex;            
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover{
+            /* color: black;
+            font-size: 1.04rem;
+            border-radius: 10px; */
+            /* background-color: rgb(255, 255, 255); */
+            /* padding: 10px; */
+            color: rgb(255, 255, 255);
+        }
+
+        .left {
+            font-size: 2rem;
+            color: #7770f7;
+            font-family: Verdana;
+        }
+
+        .projects h1 {
+            padding-top: 20px;
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .project-container {
+            border: 3px solid black;
+            margin-left: 320px;
+            margin-right: 320px;
+            display: flex;
+            justify-content: center;
+            /* width: 10px; */
+            margin-top: 30px; 
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc); */
+            background-color: #e8f9ff;
+            height: 100%;
+            /* width: 30%; */
+            border-radius: 10px;
+            overflow: hidden;
+            /* width: 100%; */
+        }
+
+        .project-container img {
+            width: 800px;
+            height: 500px;
+            transition: transform 0.9s ease-in-out;
+        }
+
+        .project-container img:hover {
+            transform: scale(1.1);
+            cursor: pointer;   
+        }
+
+        .project-description {
+            border: 3px solid black;
+            border-radius: 15px;
+            margin-top: 25px;
+            margin-left: 300px;
+            margin-right: 300px;
+            text-align: center;            
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc); */
+            background-color: #e8f9ff;
+            color: black;
+        }
+        
+        .random {
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Juhi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h1>Projects</h1>
+
+        <h2 class = "random"> Here are some of my Projects: </h2>
+
+        <div class="project-heading">
+            <h1>PORTFOLIO WEBSITE</h1>
+        </div>
+        <div class="project-container">
+            <img src="image1.png" alt="image"> <!--display the image of your projects home page or ui-->
+        </div>
+        <div class="project-content">
+            <div class="project-description">
+                <p>A portfolio website built using HTML, CSS, JS is a personal online showcase designed to highlight my skills, projects, and experiences. Together, these technologies create a visually appealing, responsive portfolio that effectively communicates the creator's expertise and personality while providing an engaging, user-friendly interface.</p> 
+            </div>
+        </div>
+
+        <div class="project-heading">
+            <h1>TO - DO LIST</h1>
+        </div>
+        <h2>Coming Soon...</h2>
+        
+        <div class="project-heading">
+            <h1>WEATHER APP</h1>
+        </div>
+        <h2>Coming Soon...</h2>
+        
+        <!-- <div class="project-container">
+            <img src="image4.png" alt="image"> 
+        </div>
+        <div class="project-content">
+            <div class="project-description">
+                <p>A portfolio website built using HTML, CSS, JS is a personal online showcase designed to highlight my skills, projects, and experiences. Together, these technologies create a visually appealing, responsive portfolio that effectively communicates the creator's expertise and personality while providing an engaging, user-friendly interface.</p> 
+            </div>
+        </div>
+
+        <div class="project-container">
+            <img src="image4.png" alt="image"> 
+        </div>
+        <div class="project-content">
+            <div class="project-description">
+                <p>A portfolio website built using HTML, CSS, JS is a personal online showcase designed to highlight my skills, projects, and experiences. Together, these technologies create a visually appealing, responsive portfolio that effectively communicates the creator's expertise and personality while providing an engaging, user-friendly interface.</p> 
+            </div>
+        </div>
+    </section> -->
+    
+</body>
+
+</html>

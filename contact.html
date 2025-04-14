@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #c4d9ff;
+            color: black;
+            font-family:Arial;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #c5baff;
+        }
+
+        nav ul {
+            display: flex;            
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            /* padding: 10px; */
+        }
+
+        nav ul li a{
+            color: black;
+            text-decoration: none;        
+        }
+
+        nav ul li a:hover{
+            /* color: black;
+            font-size: 1.04rem;
+            border-radius: 10px; */
+            /* background-color: rgb(255, 255, 255); */
+            color: rgb(255, 255, 255);
+            /* padding: 10px; */
+        }
+
+        .left {
+            font-size: 2rem;
+            color: #7770f7;
+            font-family: Verdana;
+        }
+
+        .contact h1 {
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact h1 {
+            font-style: italic;
+            text-decoration: underline;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .contact-options {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .contact-item {
+            text-align: center;
+            color: black;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            max-width: 500px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        /* contact-form button {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #6ee1e9, #2575fc);
+            border: none;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+        }
+
+         .contact-form button:hover {
+            background-color: #1da1f2;
+        } */
+
+        .contact-item a {
+            text-decoration: none;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            margin-top: 15px;
+            background-color: rgb(166, 58, 255);
+            color: white;
+            border-radius: 10px;
+            /* border-width: 3px; */
+            border: 3px solid black;
+            border-color: black;
+        }
+
+        .contact-form button:hover {
+            cursor: pointer;
+            background-color: #7770f7;
+            color: black;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Juhi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Me</h1>
+        <h3 class="work-together">Let's Work Together!</h3>
+        <p class="details">CONTACT DETAILS</p>
+
+        <div class="contact-options">
+            <!-- <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Call</h4>
+                <p>+91 9424012354</p>
+            </div> -->
+
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h4>E-Mail</h4>
+                <p>iamjuhirathor@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-link"></i>
+                <h4>Connect</h4>
+                <p><a href="http://linkedin.com/in/juhi-rathor/" target="_blank">Juhi Rathor(LinkedIn)</a></p>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <h4>Website</h4>
+                <p><a href="#">Portfolio Link after Deployment</a></p>
+            </div>
+        </div>
+
+        <h3 class="drop-email">Drop An E-Mail</h3>
+        <p class="message">I'M ALWAYS RESPONSIVE TO MESSAGES</p>
+
+        <form class="contact-form" action="https://formsubmit.co/iamjuhirathor@gmail.com" method  = "POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
+            <button type="submit">Send Message</button>
+            
+        </form>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #c4d9ff;
+            color: white;
+            font-family:Arial;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #c5baff;
+        }
+
+        nav ul {
+            display: flex;            
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover{
+            /* color: rgb(0, 0, 0);
+            font-size: 1.04rem;
+            border-radius: 10px; */
+            /* background-color: rgb(255, 255, 255); */
+            /* padding: 10px; */
+            color: rgb(255, 255, 255);
+        }
+
+        .left {
+            font-size: 2rem;
+            color: #7770f7;
+            font-family: Verdana;
+        }
+
+        .about {
+            margin: auto;
+            padding-top: 20px;
+            height: 1430px;
+            width: 1200px;
+            background-color: #c4d9ff;
+        }
+
+        .about h1 {
+            color: black;  
+        }
+
+        .first-box {
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc); */
+            background-color: #e8f9ff;
+            margin-left: 150px;
+            margin-right: 150px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.6);
+            border-width: 100px;
+            /* border-color: black; */
+            /* border: 3px solid black; */
+        }
+
+        .about-me {
+            color: black;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            font-weight: 100;
+            font-size: 20px;
+            /* animation-name: juhi; */
+            /* animation-duration: 2s; */
+            /* animation-iteration-count: 1; */
+            /* border-radius: 10px; */
+        }
+
+         
+        /* @keyframes juhi {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        } */
+
+        .intro-para {
+            font-weight: 100;
+            font-size: 20px;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: justify;
+        }
+
+        .about h1 {
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .second-div {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: 380px;
+            color: black;
+            margin-top: 20px;
+            /* margin-bottom: 40px; */
+        } 
+
+        .personal-info {
+            max-width: 400px;
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc); */
+            /* background-color: #c4d9ff; */
+            /* border: 3px solid black; */
+            background-color: #e8f9ff;
+            padding: 20px;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.6);
+            margin: auto;
+            /* margin-bottom: 40px; */
+            margin-top: 40px;
+        }
+
+        .personal-info h2 {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .personal-info p {
+            font-size: 18px;
+            margin: 8px 0;
+            color: black;
+            font-weight: bold;
+        }
+
+        .skills {
+            margin-top: 20px; 
+            margin-bottom: 50px;
+            /* border: 3px solid black; */
+            width: 400px;
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc);  */
+            background-color: #e8f9ff;
+            color: black; 
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); 
+        }
+
+        
+
+        .skills h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background: rgba(255, 255, 255, 0.6); 
+            padding: 10px 15px;
+            /* border: 3px solid black; */
+            margin: 8px 0;
+            border-radius: 5px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .skills ul li:hover {
+            background: rgba(255, 255, 255, 0.4); 
+        }
+
+        .skills ul li::before {
+            content: "✓"; 
+            font-weight: bold;
+            color: #000000; 
+        }
+
+        .about .text-gray {
+            color: gray;
+            text-align: center;
+            display: block;
+        } 
+        
+        .about h1 {
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .work-exp {
+            margin-left: 100px;
+            margin-right: 100px;
+            height: 450px;
+        }
+
+        .about .box {
+            /* border: 3px solid black; */
+            display: flex;
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc); */
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
+            color: black;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #e8f9ff;
+            margin-top: 40px;
+            border-radius: 40px;
+            margin-left: 70px;
+            margin-right: 70px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        } 
+
+
+        .about .vertical-description {
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        .hobbies {
+            margin-top: 20px; 
+            margin-bottom: 50px;
+            width: 400px;
+            /* background: linear-gradient(135deg, #6ee1e9, #2575fc);  */
+            color: black; 
+            padding: 20px;
+            /* margin-left: 100px; */
+            margin: auto;
+            background-color: #e8f9ff;
+            border-radius: 10px; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+            /* border: 3px solid black; */
+        }
+
+        .hobbies h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .hobbies ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .hobbies ul li {
+            background: rgba(255, 255, 255, 0.6);
+            /* border: 3px solid black; */
+            /* background: rgba(255, 255, 255, 0.2);  */
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 5px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .hobbies ul li:hover {
+            background: rgba(255, 255, 255, 0.4); 
+        }
+
+        .hobbies ul li::before {
+            content: "✓"; 
+            font-weight: bold;
+            color: #000000; 
+        }
+
+
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Juhi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About</h1>
+        <div class = "first-box">
+            <p class = "about-me">Hi, I'm Juhi Rathor</p>
+            <p class = "intro-para">   
+                I'm a fourth-year Computer Science & Engineering student diving headfirst into the world of Frontend Development. Passionate about crafting intuitive user experiences, I blend design with functionality to bring ideas to life. With an eye for aesthetics and a flair for interactive design, I strive to create impactful digital experiences. Join me on this exciting journey as I weave together design, rhythm, and problem-solving into a dynamic fusion of creativity, innovation, and exploration! 🚀🎨💡
+            </p>
+        </div>                
+
+        <div class="personal-info">
+            <!-- <h2>Juhi Rathor</h2> -->
+            <p><strong>Degree:</strong> B.Tech (Computer Science)</p>
+            <p><strong>E-mail:</strong> iamjuhirathor@gmail.com</p>
+            <!-- <p><strong>Phone:</strong> +91 9424012354</p> -->
+            <p><strong>City:</strong> Indore</p>
+        </div>
+        
+        <div class = "second-div">
+            <div class="skills">
+                <h2>Interpersonal Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Conscientiousness</li>
+                    <!-- <li>Time Management</li> -->
+                    <li>Decision Making</li>
+                </ul>
+            </div>
+            <div class = "skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React.js, Tailwind CSS</li>
+                    <li>SQL</li>
+                    <li>Git, GitHub</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hobbies">
+            <h2>Hobbies and Interests</h2>
+            <ul>
+                <li>Public Speaking</li>
+                <li>Reading Books</li>
+                <li>Photography</li>
+                <!-- <li>Time Management</li> -->
+                <!-- <li>Decision Making</li> -->
+            </ul>
+        </div>
+        
+        <div class="work-exp">
+            <h1>Work Experiences</h1>
+            <div class="box">
+                <div class="vertical-title">
+                    <h3>Prodigy Infotech &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;(Feb 2025)</h3>
+                </div>
+                <div class="vertical-description">
+                    I completed a one-month web development internship at Prodigy Infotech, where I focused on front-end development. During this time, I gained hands-on experience in designing and developing responsive, user-friendly interfaces using HTML, CSS, and JavaScript. I worked on optimizing website layouts, enhancing UI/UX, and implementing interactive elements to improve user engagement. This internship helped me strengthen my front-end development skills, refine my understanding of web design principles, and gain practical exposure to industry-standard practices.
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="vertical-title">
+                    <h3>CodSoft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;(March 2025)</h3>
+                </div>
+                <div class="vertical-description">
+                    Worked on real world projects and learning industry best practices, including code optimization, debugging, and version control. This experience provided a strong foundation in web development, enhancing technical skills and understanding of the development workflow. I also gained hands-on experience in creating responsive and visually appealing user interfaces while ensuring cross-browser compatibility. Collaborating on projects helped me improve problem-solving skills and adapt to real-world development challenges
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

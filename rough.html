@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ccf8f8;
+            color: white;
+            height: 300px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #2fceff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            align-items: center;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        .left-section {
+            font-size: 42px;
+            color: black;
+            margin-left: 50px;
+            margin-top: 20px;
+            margin-right: 20px;
+            padding-left: 10px;
+        }
+
+        .introductory-paragraph {
+            font-weight: 100;
+            font-size: 20px;
+            margin-top: 15px;
+            text-align: justify;
+            padding-right: 10px;
+        }
+
+        .one-line {
+            font-weight: 100;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .right-section {
+            margin-right: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section img {
+            width: 150%;
+            background-position: center;
+            padding-top: 0;
+        }
+
+        .purple {
+            color: #03b1e6;
+            font-style: italic;
+        }
+
+        #element {
+            color: #03b1e6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px; 
+        }
+
+        .social-links a img {
+            width: 30; 
+            height: 30px;
+            margin-top: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-links a img:hover {
+            transform: scale(1.2); 
+        }
+
+        /* Media query for mobile view */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                display: none; /* Hide by default */
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Juhi's Portfolio</div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="left-section">
+                Hi, It's me <span class="purple">Juhi Rathor</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="introductory-paragraph">
+                    <p>I'm a Software Engineer with a deep passion for programming and development. This space serves as a showcase of my work, featuring the projects I've built, the skills I've honed, and the experiences that have shaped my journey. Whether you're here to explore my creations, learn more about my expertise, or find inspiration for your own projects, I hope you discover something valuable. I'm always eager to innovate, collaborate, and push the boundaries of what's possible in technology.</p>
+                    <p class="one-line">Let’s connect and create something extraordinary together!</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/juhi-rathor" target="_blank">
+                        <img src="github.png" alt="GitHub">
+                    </a>
+                    <a href="https://linkedin.com/in/juhi-rathor" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <img src="juhi.jpg" alt="">
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Frontend Developer'],
+          typeSpeed: 50,
+        });
+
+        function toggleMenu() {
+            const navUl = document.querySelector('nav ul');
+            navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+
+</body>
+
+</html>
